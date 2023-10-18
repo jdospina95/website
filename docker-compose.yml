@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  nuxt:
+    build: .
+    command: npm run dev
+    ports:
+      - 3000:3000
+      - 24678:24678
+    environment:
+      - NUXT_HOST=0.0.0.0
+      - NUXT_PORT=3000
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - .:/myapp
