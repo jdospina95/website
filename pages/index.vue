@@ -1,10 +1,10 @@
 <template lang="pug">
 .website
-  SocialMediaButton(social-media="github", color="light")
+  Hero
 </template>
 
 <script setup>
-import SocialMediaButton from '@/components/ui/social-media-button';
+import Hero from '@/components/hero';
 </script>
 
 <style lang="scss">

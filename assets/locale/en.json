@@ -1,3 +1,9 @@
 {
-  "logo": "Logo"
+  "logo": "Logo",
+  "hero": {
+    "heading": "Hello! I'm Juan<br>a Frontend Engineer<br>based in Germany.",
+    "text": "I'm passionate about building beautiful and performant web applications.",
+    "primary_button": "Get in touch",
+    "secondary_button": "See my experience"
+  }
 }
