@@ -15,7 +15,7 @@
             :key="socialMediaButton.socialMedia",
             :socialMedia="socialMediaButton.socialMedia",
           )
-    img.image(src="@/assets/img/picture-min.jpg" alt="Hero Image")
+    img.image(src="@/assets/img/picture.jpg" alt="Hero Image")
 </template>
 
 <script setup lang="ts">
@@ -36,6 +36,7 @@ const socialMediaButtons = [
 @import '@/assets/scss/variables.scss';
 
 $background-color: #f5f5f5;
+$min-height: calc(800px - #{$layout-navbar-height});
 
 .hero {
   display: flex;
@@ -44,6 +45,7 @@ $background-color: #f5f5f5;
   overflow: hidden;
 
   &__container {
+    min-height: $min-height;
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex: 1;
@@ -80,7 +82,7 @@ $background-color: #f5f5f5;
       }
 
       .social-media-buttons {
-        margin-top: 140px;
+        margin-top: 210px;
         display: flex;
         gap: 16px;
       }
