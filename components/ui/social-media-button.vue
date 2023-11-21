@@ -64,8 +64,8 @@ function redirectToSocialMedia(): void {
   }
 
   &.dark {
-    background-color: #5b5b5b;
-    border: 1px solid white;
+    background-color: #141414;
+    border: 1px solid #5b5b5b;
 
     .logo {
       filter: invert(1);

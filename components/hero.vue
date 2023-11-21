@@ -9,27 +9,13 @@
           Button(type="primary" :text="$t('hero.primary_button')")
           Button(type="secondary" :text="$t('hero.secondary_button')")
           .social-media
-        .social-media-buttons
-          SocialMediaButton(
-            v-for="socialMediaButton in socialMediaButtons",
-            :key="socialMediaButton.socialMedia",
-            :socialMedia="socialMediaButton.socialMedia",
-          )
+        SocialMediaButtons
     img.image(src="@/assets/img/picture.jpg" alt="Hero Image")
 </template>
 
 <script setup lang="ts">
 import Button from '@/components/ui/button';
-import SocialMediaButton from '@/components/ui/social-media-button';
-
-const socialMediaButtons = [
-  {
-    socialMedia: 'github',
-  },
-  {
-    socialMedia: 'linkedin',
-  },
-];
+import SocialMediaButtons from '@/components/ui/social-media-buttons';
 </script>
 
 <style lang="scss" scoped>
@@ -83,8 +69,6 @@ $min-height: calc(800px - #{$layout-navbar-height});
 
       .social-media-buttons {
         margin-top: 210px;
-        display: flex;
-        gap: 16px;
       }
     }
 
