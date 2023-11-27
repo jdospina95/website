@@ -30,6 +30,24 @@ $min-height: calc(800px - #{$layout-navbar-height});
   align-items: center;
   overflow: hidden;
 
+  @media only screen and (max-width: $desktop-width) {
+    .hero__container {
+      display: flex;
+      flex-direction: column;
+
+      .hero__info {
+        .call-to-action {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .social-media-buttons {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
   &__container {
     min-height: $min-height;
     display: grid;
@@ -42,6 +60,7 @@ $min-height: calc(800px - #{$layout-navbar-height});
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 40px;
     }
 
     .hero__info {

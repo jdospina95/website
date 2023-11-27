@@ -1,8 +1,7 @@
 <template lang="pug">
 .navigation-bar
   NuxtLink.logo-link(to="/")
-    Logo
-  //- HamburgerButton
+    Logo(:showText="true")
 slot
 .footer
   Logo
@@ -15,11 +14,12 @@ slot
 
 <script setup lang="ts">
 import Logo from '@/components/logo';
-import HamburgerButton from '@/components/ui/hamburger-button';
 import SocialMediaButtons from '@/components/ui/social-media-buttons';
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/scss/variables.scss';
+
 .navigation-bar {
   padding: 16px 24px;
   display: flex;
@@ -64,6 +64,10 @@ import SocialMediaButtons from '@/components/ui/social-media-buttons';
       color: inherit;
       font-size: 16px;
       line-height: 24px;
+    }
+
+    @media only screen and (max-width: $desktop-width) {
+      display: none;
     }
   }
 }
