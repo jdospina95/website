@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import CodeBlockIcon from '@/assets/img/icons/code-block.svg';
+import CodeBlockIcon from '/assets/img/icons/code-block.svg';
 
 const props: { showText: boolean } = defineProps({
   showText: {

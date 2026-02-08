@@ -10,22 +10,28 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+
 const { t } = useI18n();
 
 const experience = [
   {
-    period: t('experience.senior_frontend_engineer_period'),
-    position: t('experience.senior_frontend_engineer'),
+    period: t('experience.tacto.software_engineer_period'),
+    position: t('experience.tacto.software_engineer'),
+    companyName: 'Tacto',
+    website: 'https://tacto.ai'
+  }, {
+    period: t('experience.demodesk.senior_frontend_engineer_period'),
+    position: t('experience.demodesk.senior_frontend_engineer'),
     companyName: 'Demodesk GmbH',
     website: 'https://demodesk.com'
   }, {
-    period: t('experience.full_stack_engineer_period'),
-    position: t('experience.full_stack_engineer'),
+    period: t('experience.demodesk.full_stack_engineer_period'),
+    position: t('experience.demodesk.full_stack_engineer'),
     companyName: 'Demodesk GmbH',
     website: 'https://demodesk.com'
   }, {
-    period: t('experience.software_engineering_intern_period'),
-    position: t('experience.software_engineering_intern'),
+    period: t('experience.demodesk.software_engineering_intern_period'),
+    position: t('experience.demodesk.software_engineering_intern'),
     companyName: 'Demodesk GmbH',
     website: 'https://demodesk.com'
   },
@@ -90,3 +96,4 @@ $background-color: white;
   }
 }
 </style>
+

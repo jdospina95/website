@@ -3,14 +3,14 @@
   .hero__container
     .hero__info-wrapper
       .hero__info
-        .hero-heading(v-html="$t('hero.heading')")
+        .hero-heading {{ $t('hero.heading') }}
         .hero-text {{ $t('hero.text') }}
         .call-to-action
           Button(type="primary" :text="$t('hero.primary_button')")
           Button(type="secondary" :text="$t('hero.secondary_button')")
           .social-media
         SocialMediaButtons
-    img.image(src="@/assets/img/picture.jpg" alt="Hero Image")
+    img.image(src="/assets/img/picture.jpg" alt="Hero Image")
 </template>
 
 <script setup lang="ts">
@@ -74,6 +74,7 @@ $min-height: calc(800px - #{$layout-navbar-height});
         font-weight: 600;
         line-height: 64px;
         margin: 0;
+        white-space: pre-line;
       }
 
       .hero-text {
@@ -98,3 +99,4 @@ $min-height: calc(800px - #{$layout-navbar-height});
   }
 }
 </style>
+

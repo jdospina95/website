@@ -6,8 +6,8 @@ button.social-media-button(:class="[props.color]", @click="redirectToSocialMedia
 <script setup lang="ts">
 import { computed } from 'vue';
 
-import githubLogo from '@/assets/img/logos/github.svg';
-import linkedInLogo from '@/assets/img/logos/linkedin.svg';
+import githubLogo from '/assets/img/logos/github.svg';
+import linkedInLogo from '/assets/img/logos/linkedin.svg';
 
 const props: { socialMedia: string, color: string } = defineProps({
   socialMedia: {

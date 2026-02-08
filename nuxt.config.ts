@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/',
-    buildAssetsDir: 'assets',
   },
   vite: {
     server: {
@@ -12,10 +11,15 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: [
-    '@nuxtjs/i18n',
-  ],
+  modules: ['@nuxtjs/i18n'],
   i18n: {
-    vueI18n: './i18n.config.ts',
+    lazy: true,
+    langDir: 'locale',
+    locales: [
+      { code: 'en', file: 'en.json' },
+      { code: 'de', file: 'de.json' },
+      { code: 'es', file: 'es.json' }
+    ],
+    defaultLocale: 'en',
   },
 });
