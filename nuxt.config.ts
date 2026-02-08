@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/',
+    buildAssetsDir: 'entry'
   },
   vite: {
     server: {

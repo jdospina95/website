@@ -12,15 +12,16 @@
     "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "unhead": "latest"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "@nuxtjs/i18n": "latest",
     "gh-pages": "^6.0.0",
-    "nuxt": "^3.7.4",
-    "sass": "^1.69.4",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.5"
+    "nuxt": "latest",
+    "sass": "latest",
+    "vue": "latest",
+    "vue-router": "latest"
   }
 }
